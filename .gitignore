@@ -49,3 +49,4 @@ models/
 *.onnx
 *.onnx.data
 *.npy
+.dyad/
