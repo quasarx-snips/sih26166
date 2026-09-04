@@ -300,7 +300,7 @@ def compute_terrain_3d(gray_u8, total_risk, routes=None, start=None, goal=None):
         ix, iy = int(px * scale), int(py * scale)
         ix = max(0, min(nw - 1, ix))
         iy = max(0, min(nh - 1, iy))
-        return float(z_down[iy, ix] + 2) # Lift paths slightly off the surface to avoid z-fighting
+        return float(z_down[iy, ix])
     
     if routes:
         for r in routes:
